@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ObjetoLouco : MonoBehaviour
 {
-    public float ababuble;
+    public float _loucura;
+    public bool na;
+    
     
     void Start()
     {
@@ -12,9 +14,20 @@ public class ObjetoLouco : MonoBehaviour
     }
     void Update()
     {
-        if (GameManager.instance._PlayerMovement.Loucura >= ababuble)
+        if (na)
         {
-            transform.GetChild(0).gameObject.SetActive(true);
+            if (GameManager.instance._PlayerMovement.Loucura >= _loucura)
+            {
+                transform.GetChild(0).gameObject.SetActive(false);
+            }
         }
+        else
+        {
+            if (GameManager.instance._PlayerMovement.Loucura >= _loucura)
+            {
+                transform.GetChild(0).gameObject.SetActive(true);
+            }
+        }
+        
     }
 }

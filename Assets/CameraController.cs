@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float sensibilidade = 100f;
+    public float _sensibilidade = 100f;
     public Transform playerBody;
     float xRotation;
 
@@ -15,14 +15,16 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * sensibilidade * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * sensibilidade * Time.deltaTime;
-        float _mouseScrool = Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime;
+
+        float mouseX = Input.GetAxis("Mouse X") * _sensibilidade * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * _sensibilidade * Time.deltaTime;
+        
+        float _mouseScrool = Input.mouseScrollDelta.y;
+
+        transform.position += transform.forward * _mouseScrool;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-        transform.position += Vector3.right * _mouseScrool;
+        xRotation = Mathf.Clamp(xRotation, -20f, 20f);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
