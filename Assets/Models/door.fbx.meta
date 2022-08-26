@@ -13,12 +13,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: iron
-    second: {fileID: 2100000, guid: 099592790dd7d7a41b163a687580da73, type: 2}
+    second: {fileID: 2100000, guid: 1586e645b1d1bb744a0ee11540a116e6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wood
-    second: {fileID: 2100000, guid: 799eef29fe06cf549a3c3603aa7a323d, type: 2}
+    second: {fileID: 2100000, guid: 1446b26f640495a4ea22ffa33a014a81, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

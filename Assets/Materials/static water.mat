@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: static water
   m_Shader: {fileID: 4800000, guid: 0fc6fe3cbeb58fb46822b6e42cbede4c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -48,12 +48,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamTex:
-        m_Texture: {fileID: 2800000, guid: 3eda0c4754885564f9df920405499055, type: 3}
+        m_Texture: {fileID: 2800000, guid: 869319dead08c3b4a9c074af06b585f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2a2d71ee416d3c844adfa1a053ea32f4, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 869319dead08c3b4a9c074af06b585f4, type: 3}
+        m_Scale: {x: 1.69, y: 1.85}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -72,14 +72,14 @@ Material:
     - _Cutoff: 0.5
     - _DepthAlpha: 0.5
     - _DepthColorDistance: 0.5
-    - _DepthDistance: 0.5
+    - _DepthDistance: 0.17
     - _DepthMinAlpha: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendTCP2: 10
-    - _FoamSmooth: 0.02
-    - _FoamSpread: 2
-    - _FoamStrength: 0.8
+    - _FoamSmooth: 0
+    - _FoamSpread: 0.7
+    - _FoamStrength: 0.802
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -99,7 +99,7 @@ Material:
     - _ReflRoughness: 0
     - _ReflStrength: 1
     - _RimMax: 1
-    - _RimMin: 0.5
+    - _RimMin: 0.75
     - _Shadow_HSV_H: 0
     - _Shadow_HSV_S: 0
     - _Shadow_HSV_V: 0
@@ -109,8 +109,8 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendTCP2: 5
     - _UVSec: 0
-    - _UVWaveAmplitude: 0.05
-    - _UVWaveFrequency: 1
+    - _UVWaveAmplitude: 0.164
+    - _UVWaveFrequency: 0
     - _UVWaveSpeed: 1
     - _WaveFrequency: 1
     - _WaveHeight: 0.1
@@ -124,16 +124,16 @@ Material:
     - __dummy__: 0
     m_Colors:
     - _BumpSpeed: {r: 0.2, g: 0.2, b: 0.3, a: 0.3}
-    - _Color: {r: 0.29214135, g: 0.7244346, b: 0.9528302, a: 1}
+    - _Color: {r: 0.5284354, g: 0.72414076, b: 0.8962264, a: 1}
     - _CustomTime: {r: 0.05, g: 1, b: 2, a: 3}
-    - _DepthColor: {r: 0, g: 0, b: 1, a: 1}
+    - _DepthColor: {r: 0.03404236, g: 0.14421588, b: 0.4811321, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    - _FoamColor: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
     - _FoamSpeed: {r: 2, g: 2, b: 2, a: 2}
-    - _HColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
+    - _HColor: {r: 1, g: 1, b: 1, a: 1}
     - _MainTex_SinAnimParams: {r: 1, g: 0.05, b: 1, a: 0}
-    - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
-    - _SColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _SColor: {r: 0.14125343, g: 0.011213961, b: 0.33962262, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _VColorBlendOffset: {r: 0, g: 0, b: 0, a: 0}
     - _VColorBlendSmooth: {r: 0.25, g: 0.25, b: 0.25, a: 0.25}
