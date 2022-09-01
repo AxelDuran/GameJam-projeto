@@ -9,6 +9,13 @@ public class GameManager : MonoBehaviour
 
     public PlayerMovement _PlayerMovement;
     
+    //relacionado aos puzzles
+    public bool _chave1 = false;
+
+    //Cuida de UI
+    public GameObject precionarE;
+    public GameObject ePrecionado;
+    
     private void Awake()
     {
         instance = this;
